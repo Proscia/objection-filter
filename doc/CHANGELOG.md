@@ -1,5 +1,13 @@
 # Changelog
 
+### 4.2.0
+
+- Optimized the sql query so that belongsTo and hasOne relations both perform similarly when filtering
+
+### 4.1.1
+
+  - Added support for Node v14 [PR #34](https://github.com/tandg-digital/objection-filter/pull/34)
+
 ### 4.1.0
 
 - Optimized the sql query so that when only joining onto belongsTo relations, it doesn't create a separate filter query. This significantly improves performance in some specific use cases.
